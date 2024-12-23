@@ -1,0 +1,4 @@
+SELECT nazwa, rzeka, stanAlarmowy FROM wodowskazy;
+SELECT nazwa, rzeka, stanOstrzegawczy, stanAlarmowy, stanWody FROM wodowskazy, pomiary WHERE pomiary.wodowskazy_id = wodowskazy.id AND pomiary.dataPomiaru = "2022-05-05";
+SELECT nazwa, rzeka, stanOstrzegawczy, stanAlarmowy, stanWody FROM wodowskazy, pomiary WHERE pomiary.wodowskazy_id = wodowskazy.id AND pomiary.dataPomiaru = "2022-05-05" AND pomiary.stanWody > wodowskazy.stanOstrzegawczy;
+SELECT dataPomiaru, AVG(stanWody) FROM pomiary GROUP BY dataPomiaru;

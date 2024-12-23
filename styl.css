@@ -1,0 +1,59 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+header {
+    display: flex;
+}
+#leftHeader {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+}
+#rightHeader {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%; 
+}
+#menu {
+    background-color: navy;
+    padding: 20px;
+}
+.format {
+    color: silver;
+    margin: 50px;
+}
+.format:hover {
+    color: white;
+    text-decoration: underline;
+}
+main {
+    display: flex;
+    background-color: azure;
+    height: 550px;
+}
+#left {
+    width: 70%;
+}
+#right {
+    width: 30%;
+}
+footer {
+    background-color: navy;
+    color: white;
+}
+table {
+    border: solid 1px navy;
+    margin: auto;
+    width: 70px;
+}
+tr:hover {
+    background-color: skyblue;
+}
+#image2 {
+    width: 90%;
+}
